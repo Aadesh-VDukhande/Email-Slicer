@@ -1,0 +1,15 @@
+email = input("Enter your Emial Address : ").strip()      # Strip option space la remove karto input chya 
+
+#slice operation use kelay = to '@' chya adi ch i/p ghenar
+user_name = email[:email.index("@")]
+
+#slice operation use kelay = to '@' chya nantr che i/p ghenar
+domain_name = email[email.index("@")+1:]
+
+
+# Ha output show karnar 
+output = "Your username is '{}' \nyour domain name is '{}' ".format(user_name,domain_name)
+
+print(output)
+
+# print("Your username is",user_name,"and your domain is",domain_name)
